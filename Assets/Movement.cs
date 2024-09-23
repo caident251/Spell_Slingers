@@ -55,11 +55,14 @@ public class Player_Script : MonoBehaviour
         
 
         x = x+Input.GetAxis("Mouse X");
-        y = Mathf.Clamp(y+Input.GetAxis("Mouse Y"),-45f,45f);
+        y = Mathf.Clamp(y+(Input.GetAxis("Mouse Y")* TurnSpeed),-45f,45f);
+        if (!groundedPlayer)
+        {
+            gravityValue = -9.8f;
+        }
 
 
-
-        rotation = Quaternion.Euler(-y*TurnSpeed,x*TurnSpeed,0);
+        rotation = Quaternion.Euler(-y,x*TurnSpeed,0);
         transform.rotation=Quaternion.Euler(new Vector3(0,x*TurnSpeed,0));
         maincamera.transform.rotation = rotation;
     }

@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b4ee57471c4b2b3438f425d3682baa2f, type: 3}
+  m_Name: FireBall
+  m_EditorClassIdentifier: 
+  creation: {fileID: 399101368211337443, guid: ed9e0833ca345cd4ba93c44b5a00e5a0, type: 3}
+  damage: 100
+  lifetime: 0
+  Cost: 15
+  Call: Launch
+  Icon: {fileID: 0}
+  Description: condene fire mana into a sphere of red hot death fire at enemies for
+    splash damage in a huge explosion
+  Title: Fire Ball

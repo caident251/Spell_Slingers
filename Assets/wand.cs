@@ -26,6 +26,13 @@ public class wand : MonoBehaviour
              // b.transform.parent = Player.transform.GetChild(0).GetChild(1).rotation * b.transform.rotation;
               b.transform.parent = Player.transform.GetChild(0).GetChild(1).GetChild(0);
         }
+        if (moveset.Attack == 2)
+        {
+            
+            GameObject b = Instantiate(moveset.Secondary.creation, transform.position, Player.transform.GetChild(0).GetChild(1).GetChild(0).rotation * moveset.Secondary.creation.transform.rotation);
+            // b.transform.parent = Player.transform.GetChild(0).GetChild(1).rotation * b.transform.rotation;
+            b.transform.parent = Player.transform.GetChild(0).GetChild(1).GetChild(0);
+        }
         moveset.Attack = 0;
     }
 }

@@ -4,8 +4,9 @@ using UnityEngine;
 
 public class DamageDealer : MonoBehaviour
 {
-    public float Damage;
+    public float Damage,timer,lifetime;
     public GameObject Source;
+    public bool Destructable;
     // Start is called before the first frame update
     void Start()
     {
@@ -15,15 +16,25 @@ public class DamageDealer : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+         timer = timer + Time.deltaTime;
+        if (timer > lifetime)
+        {
+            if (Destructable)
+            {
+                Destroy(gameObject);
+            }
+
+        }
     }
    void OnTriggerEnter(Collider other){
-        if(other.gameObject != Source){
-            Debug.Log(other.name);
-            if(other.gameObject.GetComponent<Enemy_Health>() != null){
-            other.gameObject.GetComponent<Enemy_Health>().DoDamage(Damage * Source.GetComponent<Combat>().Strength*Source.GetComponent<Combat>().Magic);
+
+        if (other.gameObject != Source)
+        {
+            if (other.gameObject.GetComponent<Enemy_Health>() != null)
+            {
+                other.gameObject.GetComponent<Enemy_Health>().DoDamage(Damage * Source.GetComponent<Combat>().Strength * Source.GetComponent<Combat>().Magic);
             }
-        Destroy(gameObject);
+
         }
     }
 }

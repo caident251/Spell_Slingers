@@ -8,4 +8,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/SampleScene.unity
     guid: 99c9720ab356a0642a771bea13969a05
+  - enabled: 1
+    path: Assets/Volcano Map.unity
+    guid: cbb5f46fc78c5bd4d8a1c226a7dbf36e
+  - enabled: 1
+    path: Assets/Floating Isles.unity
+    guid: 0fdb16b54bb53b141affdad71edcf0c0
+  - enabled: 1
+    path: Assets/Menu.unity
+    guid: 7debc54c3cbe24346aef181096910bc1
   m_configObjects: {}
