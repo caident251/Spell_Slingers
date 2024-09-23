@@ -748,6 +748,7 @@ MonoBehaviour:
   CurSpell: {fileID: 0}
   Secondary: {fileID: 11400000, guid: 0a0929e38fd9df048b8eba8165b39bce, type: 2}
   Attack: 0
+  Mouse: 0
   Wand: {fileID: 592408262745380718}
   Maxmagic: 50
   Curmagic: 0
@@ -755,6 +756,9 @@ MonoBehaviour:
   Cost: 0
   rect: {fileID: 0}
   lookpoint: {x: 0, y: 0, z: 0}
+  SkillI: {fileID: 0}
+  SkillII: {fileID: 0}
+  SkillIII: {fileID: 0}
 --- !u!114 &5168402003875625471
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -803,6 +807,8 @@ MonoBehaviour:
   MaxHealth: 100
   CurHealth: 0
   origin: 0
+  DamageMultiplier: 0
+  rect: {fileID: 0}
 --- !u!136 &2624708448806922292
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -1091,6 +1097,7 @@ GameObject:
   - component: {fileID: 1268945748192630861}
   - component: {fileID: 8850152714198044279}
   - component: {fileID: 1282574149935562208}
+  - component: {fileID: 7882309782388556892}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -1218,6 +1225,23 @@ MonoBehaviour:
     m_MipBias: 0
     m_VarianceClampScale: 0.9
     m_ContrastAdaptiveSharpening: 0
+--- !u!114 &7882309782388556892
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5272254341550643126}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 172515602e62fb746b5d573b38a5fe58, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_IsGlobal: 1
+  priority: 0
+  blendDistance: 0
+  weight: 1
+  sharedProfile: {fileID: 11400000, guid: c3bc2943aade35442b0cc12e5bc291ff, type: 2}
 --- !u!1 &5327135900466397171
 GameObject:
   m_ObjectHideFlags: 0
