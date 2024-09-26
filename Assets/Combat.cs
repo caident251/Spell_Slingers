@@ -12,6 +12,7 @@ public class Combat : MonoBehaviour
     public int Attack, Mouse;
     public GameObject Wand;
     Animator Anim;
+   public layermask notprojectile;
     public float Maxmagic, Curmagic,origin,Cost;
     public RectTransform rect;
     public Vector3 lookpoint;
@@ -34,6 +35,7 @@ public class Combat : MonoBehaviour
         RaycastHit hit;
         if (Physics.Raycast(Camera.main.gameObject.transform.position, Camera.main.gameObject.transform.forward, out hit, 100f))
         {
+            
             lookpoint = hit.point;
         }
 

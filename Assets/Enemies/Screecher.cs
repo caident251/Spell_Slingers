@@ -22,7 +22,7 @@ public class Screecher : MonoBehaviour
        
        Agent = GetComponent<NavMeshAgent>();
        Anim = GetComponent<Animator>();
-              obs = (GameObject[]) Object.FindObjectsOfType(typeof(GameObject));
+         GameObject[]     obs = (GameObject[]) Object.FindObjectsOfType(typeof(GameObject));
         LR = GetComponent<LineRenderer>();
 
         for( i = 0;i<obs.Length;i++)
