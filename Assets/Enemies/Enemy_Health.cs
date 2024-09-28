@@ -32,10 +32,10 @@ public class Enemy_Health : MonoBehaviour
        if(Cur_health <1){
           Destroy(gameObject);
        }
-       if(p != Cur_health)
+       if(p > Cur_health)
         {
             Debug.Log("b");
-            p = p - (p - Cur_health)*Time.deltaTime*100;
+            p = p - (p - Cur_health)*Time.deltaTime*200;
 
 
         }

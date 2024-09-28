@@ -11,17 +11,17 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: e72b5a5b453821d45b908ec1acf7fe74,
         type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.15
+      value: 0.2
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e72b5a5b453821d45b908ec1acf7fe74,
         type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.15
+      value: 0.2
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e72b5a5b453821d45b908ec1acf7fe74,
         type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.15
+      value: 0.2
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e72b5a5b453821d45b908ec1acf7fe74,
         type: 3}
@@ -156,7 +156,7 @@ MonoBehaviour:
   Target: {fileID: 0}
   attackrange: 10
   distance: 0
-  Damage: 0
+  Damage: 10
   Orb: {fileID: 5541257237627577743}
 --- !u!195 &1377204656510269901
 NavMeshAgent:
@@ -319,7 +319,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Max_Health: 100
   Cur_health: 0
-  hurt: {fileID: 2100000, guid: eb4f6bf4a650fc34a98734f99e9fe143, type: 2}
+  origincolor: []
+  p: 0
 --- !u!136 &1463496338199775794
 CapsuleCollider:
   m_ObjectHideFlags: 0

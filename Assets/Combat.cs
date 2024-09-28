@@ -12,7 +12,7 @@ public class Combat : MonoBehaviour
     public int Attack, Mouse;
     public GameObject Wand;
     Animator Anim;
-   public layermask notprojectile;
+   public LayerMask notprojectile;
     public float Maxmagic, Curmagic,origin,Cost;
     public RectTransform rect;
     public Vector3 lookpoint;
@@ -33,10 +33,12 @@ public class Combat : MonoBehaviour
     void Update()
     {
         RaycastHit hit;
-        if (Physics.Raycast(Camera.main.gameObject.transform.position, Camera.main.gameObject.transform.forward, out hit, 100f))
+        if (Physics.SphereCast(Camera.main.gameObject.transform.position,2f, Camera.main.gameObject.transform.forward, out hit, 100f,notprojectile))
         {
             
             lookpoint = hit.point;
+        }else{
+            lookpoint = Camera.main.gameObject.transform.position+1000f*Camera.main.gameObject.transform.forward;
         }
 
         rect.sizeDelta = new Vector2((origin /( Maxmagic+Magic)) * Curmagic, rect.sizeDelta.y) ;

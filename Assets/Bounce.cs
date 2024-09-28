@@ -23,7 +23,7 @@ public class Bounce : MonoBehaviour
         if(other.gameObject.GetComponent<Player_Script>())
         {
 
-            other.gameObject.GetComponent<Player_Script>().gravityValue = 400000*Time.deltaTime;
+            other.gameObject.GetComponent<Player_Script>().gravityValue = 20000*Time.deltaTime;
             
 
         }
