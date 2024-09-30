@@ -249,7 +249,7 @@ MonoBehaviour:
   y: 0
   JumpHeight: 10
   gravityValue: -9.8
-  TurnSpeed: 0.2
+  TurnSpeed: 2
 --- !u!143 &591282432690544162
 CharacterController:
   m_ObjectHideFlags: 0
@@ -298,13 +298,20 @@ MonoBehaviour:
   CurSpell: {fileID: 0}
   Secondary: {fileID: 11400000, guid: 0a0929e38fd9df048b8eba8165b39bce, type: 2}
   Attack: 0
+  Mouse: 0
   Wand: {fileID: 4999522590290672215}
+  notprojectile:
+    serializedVersion: 2
+    m_Bits: 0
   Maxmagic: 50
   Curmagic: 0
   origin: 0
   Cost: 0
   rect: {fileID: 0}
   lookpoint: {x: 0, y: 0, z: 0}
+  SkillI: {fileID: 0}
+  SkillII: {fileID: 0}
+  SkillIII: {fileID: 0}
 --- !u!114 &3803766496773995020
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -353,6 +360,8 @@ MonoBehaviour:
   MaxHealth: 100
   CurHealth: 0
   origin: 0
+  DamageMultiplier: 1
+  rect: {fileID: 0}
 --- !u!136 &7439491352874964677
 CapsuleCollider:
   m_ObjectHideFlags: 0

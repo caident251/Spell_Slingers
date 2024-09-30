@@ -9,7 +9,7 @@ public class Combat : MonoBehaviour
     public int Speed, Strength, Constitution, Intelligence, Magic, Attibute_points;
     public Spells Primary,CurSpell;
     public Spells Secondary;
-    public int Attack, Mouse;
+    public int Attack, Mouse,CurSkill;
     public GameObject Wand;
     Animator Anim;
    public LayerMask notprojectile;
@@ -63,10 +63,14 @@ public class Combat : MonoBehaviour
                         {
                             Anim.SetBool(Primary.Call, Input.GetMouseButton(0));
                         }
+
                         if (Parameter.type == AnimatorControllerParameterType.Trigger)
                         {
+
                             Anim.SetTrigger(Primary.Call);
                         }
+                        
+                        
                     }
                 }
             }
@@ -87,15 +91,18 @@ public class Combat : MonoBehaviour
                         {
                             Anim.SetBool(Secondary.Call, Input.GetMouseButton(1));
                         }
+
                         if (Parameter.type == AnimatorControllerParameterType.Trigger)
                         {
+
                             Anim.SetTrigger(Secondary.Call);
+
                         }
                     }
                 }
             }
         }
-        Anim.SetBool(Secondary.Call, Input.GetMouseButton(1));
+
         Ftimer = Ftimer - Time.deltaTime;
         if (Input.GetKeyDown("1")&&(Ftimer<=0))
         {

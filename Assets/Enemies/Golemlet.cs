@@ -61,7 +61,7 @@ public class Golemlet : MonoBehaviour
         {
             Attack = 2;
         }
-        else
+        if(Attack==0)
         {
             Agent.speed = 5;
 
@@ -79,7 +79,7 @@ public class Golemlet : MonoBehaviour
                 path = 10;
                 Agent.speed = 50;
                 Agent.SetDestination(rollpath);
-                if (Vector3.Distance(Target.transform.position, rollpath) < 5f)
+                if (Vector3.Distance(transform.position, rollpath) < 5f)
                 {
                     Agent.speed = 5;
                     Attack = 0;

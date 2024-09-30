@@ -238,7 +238,7 @@ MonoBehaviour:
   Speed: 1
   Strength: 1
   Constitution: 1
-  Intelligence: 50
+  Intelligence: 10
   Magic: 1
   Attibute_points: 0
   Primary: {fileID: 11400000, guid: 5dcefc6a34321cc46bc30962eba04d2f, type: 2}
@@ -307,7 +307,7 @@ MonoBehaviour:
   MaxHealth: 100
   CurHealth: 0
   origin: 0
-  DamageMultiplier: 0
+  DamageMultiplier: 1
   rect: {fileID: 0}
 --- !u!136 &1544937512430653089
 CapsuleCollider:
@@ -1233,7 +1233,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7686130051636267384}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 

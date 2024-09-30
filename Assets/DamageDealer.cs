@@ -34,6 +34,11 @@ public class DamageDealer : MonoBehaviour
             {
                 other.gameObject.GetComponent<Enemy_Health>().DoDamage(Damage * Source.GetComponent<Combat>().Strength * Source.GetComponent<Combat>().Magic);
             }
+            else
+            {
+                Destroy(gameObject);
+
+            }
 
         }
     }

@@ -68,8 +68,8 @@ public class Menu_manager : MonoBehaviour
 
     public void GameLoader(TMP_Dropdown sender)
     {
-        SceneManager.LoadScene(sender.value);
-        scenenumber = sender.value;
+        SceneManager.LoadScene(sender.value+1);
+        scenenumber = sender.value+1;
         Scene_Manaager.Player =  Player;
     }
     public void Playerselect(GameObject Build)
