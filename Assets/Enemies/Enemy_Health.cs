@@ -9,7 +9,7 @@ public class Enemy_Health : MonoBehaviour
 
     GameObject[] spawn;
     public Color[] origincolor;
-    public float p;
+    public float p,timer;
     // Start is called before the first frame update
     void Start()
     {
@@ -29,28 +29,32 @@ public class Enemy_Health : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-       if(Cur_health <1){
-          Destroy(gameObject);
-       }
-       if(p > Cur_health)
+        if (Cur_health < 1)
         {
-            Debug.Log("b");
-            p = p - (p - Cur_health)*Time.deltaTime*200;
-
+            Destroy(gameObject);
 
         }
-        else
+        if (p > Cur_health)
         {
-            for (int i = 0; i < transform.childCount; i++)
+
+
+
+            timer = timer + Time.deltaTime;
+            if (timer > 0.1f)
             {
-                if (transform.GetChild(i).GetComponent<Renderer>() != null)
+                for (int i = 0; i < transform.childCount; i++)
                 {
-                    transform.GetChild(i).GetComponent<Renderer>().material.color = origincolor[i];
+                    if (transform.GetChild(i).GetComponent<Renderer>() != null)
+                    {
+                        transform.GetChild(i).GetComponent<Renderer>().material.color = origincolor[i];
+                    }
                 }
+                timer = 0;
             }
         }
     }
-    public void DoDamage(float damage){
+    public void DoDamage(float damage)
+{
         Cur_health -= damage;
         for (int i = 0; i < transform.childCount; i++)
         {

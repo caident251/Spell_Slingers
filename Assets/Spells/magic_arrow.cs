@@ -30,23 +30,24 @@ public class magic_arrow : MonoBehaviour
            if(GetComponent<Animation>().isPlaying ==false)
     {
            GameObject a = transform.GetChild(i).gameObject;
-       if(a.GetComponent<SphereCollider>()==null)
+       if(a.GetComponent<BoxCollider>()==null)
        {
                 var c = a.AddComponent<DamageDealer>();
-       var b = a.AddComponent<Rigidbody>();
-                    var g = a.AddComponent<SphereCollider>();
+                    c.lifetime = player.GetComponent<Combat>().CurSpell.lifetime;
+                    var b = a.AddComponent<Rigidbody>();
+                    var g = a.AddComponent<BoxCollider>();
 
                 }
        else
        {
-          var g = a.GetComponent<SphereCollider>();
+          var g = a.GetComponent<BoxCollider>();
            g.isTrigger = true;
-           g.radius = 2;
+
                 var c = a.GetComponent<DamageDealer>();
                 c.Source =player;
                     c.Destructable = true;
+
        c.Damage = player.GetComponent<Combat>().CurSpell.damage;
-       c.lifetime = player.GetComponent<Combat>().CurSpell.lifetime;
        var b = a.GetComponent<Rigidbody>();
        b.isKinematic = true;
        }

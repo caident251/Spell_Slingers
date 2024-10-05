@@ -31,7 +31,7 @@ public class Enemy_spawn : MonoBehaviour
     void Update()
     {
         clock = clock + Time.deltaTime;
-        if(clock >= 5f){
+        if(clock >= 10f){
         foreach(GameObject Player in Players)
         {
              UnityEngine.AI.NavMeshHit hit;

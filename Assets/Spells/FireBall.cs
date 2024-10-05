@@ -31,6 +31,7 @@ public class FireBall : MonoBehaviour
             }
             transform.parent = null;
             GetComponent<Rigidbody>().useGravity=true;
+            GetComponent<DamageDealer>().Source=player;
         }
         
     }

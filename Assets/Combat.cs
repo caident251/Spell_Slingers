@@ -33,10 +33,11 @@ public class Combat : MonoBehaviour
     void Update()
     {
         RaycastHit hit;
-        if (Physics.SphereCast(Camera.main.gameObject.transform.position,2f, Camera.main.gameObject.transform.forward, out hit, 100f,notprojectile))
+        if (Physics.SphereCast(Camera.main.gameObject.transform.position,2f, Camera.main.gameObject.transform.forward, out hit, 100000f,notprojectile))
         {
             
             lookpoint = hit.point;
+            Debug.Log(hit.collider.gameObject.name);
         }else{
             lookpoint = Camera.main.gameObject.transform.position+1000f*Camera.main.gameObject.transform.forward;
         }

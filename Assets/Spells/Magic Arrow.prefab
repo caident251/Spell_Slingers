@@ -9,8 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1593875927070917194}
-  - component: {fileID: 2510578370894028332}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Magic Arrow
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -33,23 +32,6 @@ Transform:
   - {fileID: 3317989214236920382}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
---- !u!114 &2510578370894028332
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6398996450123622500}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8d7b566b582055d49937a7c3122d64bd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Damage: 0
-  timer: 0
-  lifetime: 3
-  Source: {fileID: 0}
-  Destructable: 1
 --- !u!1001 &2990782545577520597
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -128,6 +110,11 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7146521406498821007, guid: 69e451feff20bd443b0dcac991ed894d,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: -6093592463355912122, guid: 69e451feff20bd443b0dcac991ed894d,
         type: 3}
       propertyPath: m_Enabled
@@ -173,11 +160,21 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -516098083770646512, guid: 69e451feff20bd443b0dcac991ed894d,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 69e451feff20bd443b0dcac991ed894d,
         type: 3}
       propertyPath: m_Name
       value: Magic_Arrow
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 69e451feff20bd443b0dcac991ed894d,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 4083501151425157549, guid: 69e451feff20bd443b0dcac991ed894d,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -207,6 +204,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
       value: 140.16386
+      objectReference: {fileID: 0}
+    - target: {fileID: 8416272007918961125, guid: 69e451feff20bd443b0dcac991ed894d,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:
@@ -336,6 +338,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: MagicV2
       objectReference: {fileID: 0}
+    - target: {fileID: 9008521478721869546, guid: 0589bcdbf0dacff4cb0596045dcb3542,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -410,6 +417,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: MagicV2
       objectReference: {fileID: 0}
+    - target: {fileID: 9008521478721869546, guid: 0589bcdbf0dacff4cb0596045dcb3542,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -483,6 +495,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: MagicV2
+      objectReference: {fileID: 0}
+    - target: {fileID: 9008521478721869546, guid: 0589bcdbf0dacff4cb0596045dcb3542,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

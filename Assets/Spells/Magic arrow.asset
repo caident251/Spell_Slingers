@@ -15,7 +15,7 @@ MonoBehaviour:
   creation: {fileID: 6398996450123622500, guid: 64846bc625872e940a9d635d4e5a0369,
     type: 3}
   damage: 30
-  lifetime: 3
+  lifetime: 5
   Cost: 20
   Call: Swing0
   Icon: {fileID: 21300000, guid: 0005fffd7683e3545a8f55450832acaf, type: 3}

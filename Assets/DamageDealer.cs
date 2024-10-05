@@ -36,8 +36,10 @@ public class DamageDealer : MonoBehaviour
             }
             else
             {
-                Destroy(gameObject);
-
+                if (other.gameObject.layer != LayerMask.NameToLayer("Projectile"))
+                {
+                    
+                }
             }
 
         }
